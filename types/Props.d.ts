@@ -44,7 +44,7 @@ export interface DayPickerProps {
   captionElement?:
     | React.ReactElement<Partial<CaptionElementProps>>
     | React.ComponentClass<CaptionElementProps>
-    | React.SFC<CaptionElementProps>;
+    | React.FC<CaptionElementProps>;
   className?: string;
   classNames?: ClassNames;
   containerProps?: React.DetailedHTMLProps<
@@ -69,7 +69,7 @@ export interface DayPickerProps {
   navbarElement?:
     | React.ReactElement<Partial<NavbarElementProps>>
     | React.ComponentClass<NavbarElementProps>
-    | React.SFC<NavbarElementProps>;
+    | React.FC<NavbarElementProps>;
   numberOfMonths?: number;
   onBlur?: (e: React.FocusEvent<HTMLDivElement>) => void;
   onCaptionClick?: (month: Date, e: React.MouseEvent<HTMLDivElement>) => void;
@@ -142,7 +142,7 @@ export interface DayPickerProps {
   weekdayElement?:
     | React.ReactElement<Partial<WeekdayElementProps>>
     | React.ComponentClass<WeekdayElementProps>
-    | React.SFC<WeekdayElementProps>;
+    | React.FC<WeekdayElementProps>;
   weekdaysLong?: string[];
   weekdaysShort?: string[];
   tabIndex?: number;
